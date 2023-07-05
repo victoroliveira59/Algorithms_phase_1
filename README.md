@@ -1,19 +1,18 @@
 
 # Exercícios de Fixação em Ruby
 
-Este repositório contém uma coleção de exercícios de fixação em Ruby para ajudar você a aprofundar seus conhecimentos na linguagem.
+## &#x1F680; Começando!
 
+Este repositório contém uma coleção de exercícios de fixação em Ruby para ajudar você a aprofundar seus conhecimentos na linguagem.
 
 Comece a explorar os exercícios disponíveis!
 
 ##  &#x1F4C2;  Estrutura do Repositório
 
-O repositório está organizado da seguinte maneira:
+O repositório está organizado da seguinte maneira.
 
-```
 Está separado em pastas para cada evolução.
 
-```
 
 ## &#x1F4DA; Contribuindo
 
