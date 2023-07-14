@@ -5,7 +5,7 @@ end
 
 arr = (10..100).to_a
 print "Insira um valor para saber se está na lista: "
-target = gets.chomp.to_i
+target = 55
 result = binary_search(arr,target)
 
 if result 
