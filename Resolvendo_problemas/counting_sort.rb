@@ -18,7 +18,7 @@ def counting_sort (arr)
         arr_b[count[arr[i]-1]-1] = arr[i]
             count[arr[i]-1] -= 1  
     end
-    return arr_b
+    return arr_b # Essa função retorna o valor do meu novo array(arr_b) para subscrever sobre o array principal
 end
 
 lista = [3,5,6,7,7,6,3,2,1,4]
