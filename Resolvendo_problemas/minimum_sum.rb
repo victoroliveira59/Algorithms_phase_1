@@ -18,7 +18,7 @@ b = Array.new(0)
     end                                            # e fazendo a concatenação das duas partes antes e depois do elemento
   end
 
-  return b.sum # Aqui retornamos a soma de todos os elementos no array b, que representam a soma mínima.
+  b.sum # Aqui retornamos a soma de todos os elementos no array b, que representam a soma mínima.
 end
 
 
