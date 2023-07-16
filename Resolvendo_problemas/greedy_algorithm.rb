@@ -1,3 +1,4 @@
+#noinspection RubyScope
 def greedy (recebido, valor)
 
     moeda = [1, 5, 10, 25, 50]
@@ -10,7 +11,7 @@ def greedy (recebido, valor)
         troco << maior_moeda
         troco_total -= maior_moeda
     end
-    return troco
+    troco
 end
 
 recebido = 150
