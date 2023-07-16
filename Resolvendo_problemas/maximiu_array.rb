@@ -1,6 +1,6 @@
 arr = [ 9,8,8,5 ]
 
-a = arr.sort()
+a = arr.sort
 k = 4
 
 a.each_with_index do |value, i|
