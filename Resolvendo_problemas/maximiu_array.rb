@@ -1,6 +1,7 @@
+# O
 arr = [9,-8,8,3]
 
-a = arr.sort
+a = arr.sort #essa função ordena o array em ordem crescente
 k = 3
 
 a.each_with_index do |value, i|
@@ -11,7 +12,7 @@ a.each_with_index do |value, i|
 		elsif value == 0
 			k = 0
 			break
-		elsif value > 0
+		elsif value > 0 #Quando o menor valor do array e maior que zero ele é multiplicado por menos 1 e o codigo é parado
 			a[i] *= - 1
 			break
 		else
@@ -19,4 +20,4 @@ a.each_with_index do |value, i|
 		end
 	end
 end
-puts a.sum
+puts a.sum # Todos os elementos são somados e retornando o resultado
