@@ -6,7 +6,7 @@ k = 3
 
 a.each_with_index do |value, i|
 	if k > 0
-		if value < 0
+		if value < 0 #Condição do valor menor que 0, multiplica por -1 e vira positivo decrementando o meu valor de K
 			a[i] *= - 1
 			k -= 1
 		elsif value == 0
