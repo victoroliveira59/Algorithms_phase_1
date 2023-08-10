@@ -1,6 +1,6 @@
 require 'json'
 
-pasta_codigo = "/home/victoroliveira59/Documentos/Github/Ruby/Desenvolvendo_me_/Resolvendo_problemas"
+pasta_codigo = "/home/victoroliveira59/Documentos/Github/Ruby/Desenvolvendo_me_/Algoritimos_fase1"
 
 # Percorre todos os arquivos da pasta "Código"
 Dir.foreach(pasta_codigo) do |nome_arquivo|
