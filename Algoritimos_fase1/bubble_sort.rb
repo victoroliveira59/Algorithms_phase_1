@@ -8,7 +8,6 @@ class Bublle_sort
 		arr.each_index do |i|
 			max_index = arr[i..-1].each_with_index.min_by { |num, _| num }[1] + i
 			arr[i], arr[max_index] = arr[max_index], arr[i]
-			true
 		end
 		arr
 	end
