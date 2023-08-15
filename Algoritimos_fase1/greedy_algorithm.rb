@@ -19,4 +19,4 @@ valor = 75
 
 result = greedy(recebido, valor)
 
-puts result
+print result
