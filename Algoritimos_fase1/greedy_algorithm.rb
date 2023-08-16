@@ -14,8 +14,8 @@ def greedy (recebido, valor)
     troco
 end
 
-recebido = 150
-valor = 75
+recebido = gets.chomp.to_i
+valor = gets.chomp.to_i
 
 result = greedy(recebido, valor)
 
