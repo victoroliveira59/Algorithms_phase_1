@@ -14,7 +14,7 @@ class Bublle_sort
 	end
 end
 
-lista = [9,2,6,3,7,1,-3,-8]
+lista = [1,2,8,9,6,4,4,7]
 result = Bublle_sort.new
 print result.bubble_sort(lista)
 
