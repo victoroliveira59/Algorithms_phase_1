@@ -3,16 +3,16 @@
 def counting_sort(arr)
 	if arr.any? { |num| num.negative? }
 		puts "O array contém números negativos. Não é possível realizar a ordenação."
-		return []
+		return nil
 	end
 
 	max_value = 7 #Essa linha indica que meu array deve ter no máximo 7 indices(0 a 6)
 	min_value = arr.min
 	array_count = Array.new(max_value, 0)
 
-	if arr.each {|element| element > max_value}
-		puts "O array contem valores maiores que max_value altere o array ou max_value"
-		return
+	if arr.any? { |element| element > max_value }
+		puts "O array contém valores maiores que max_value. Altere o array ou max_value."
+		return nil
 	end
 
 # O loop abaixo calcula a frequência de repetição dos arrays em um novo array(count) que armazena a repetição de cada número em seu indice
@@ -38,6 +38,6 @@ array_b = [] #Inicia o terceiro array
 	array_b
 end
 
-unsorted_list = [2,6,5,8,9,4,6,6]
+unsorted_list = [2,6,9,6,2,4,6,6]
 result = counting_sort(unsorted_list)
 puts "#{result}"
