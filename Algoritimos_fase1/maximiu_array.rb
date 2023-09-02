@@ -2,8 +2,6 @@
 
 def maximum (arr,k)
 	a = arr.sort #essa função ordena o array em ordem crescente
-
-
 	a.each_with_index do |value, i|
 		if k > 0
 			if value < 0 #Condição do valor menor que 0, multiplica por -1 e vira positivo decrementando o meu valor de K
@@ -24,8 +22,3 @@ def maximum (arr,k)
 	a.sum
 end
 
-
-arr = [9,8,5,2]
-k = 3
-result = maximum(arr, k)
-puts result # Todos os elementos são somados e retornando o resultado
