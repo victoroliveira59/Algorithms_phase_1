@@ -3,7 +3,7 @@ require './Algoritimos_fase1/greedy_algorithm.rb'
 
 RSpec.describe 'greedy' do
 	context 'Testing algorithm greedy' do
-		it 'If the amount paid is greater' do
+		it 'Searching the algorithm greedy' do
 			input = 200
 			received = 75
 			expected = [50,50,25]
@@ -11,7 +11,6 @@ RSpec.describe 'greedy' do
 			result = greedy(input, received)
 			expect(result).to eq(expected)
 		end
-
 		it 'If the amount received is equal to the amount paid' do
 			input = 200
 			received = 200
@@ -22,6 +21,5 @@ RSpec.describe 'greedy' do
 		end
 	end
 end
-
 
 
