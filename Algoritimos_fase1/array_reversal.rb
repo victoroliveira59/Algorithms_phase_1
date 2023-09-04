@@ -1,5 +1,18 @@
 
 
+def rothate(arr ,d, n)
+
+	if d >= n
+		nil
+		puts "O numero de tentativas de rotação e maior que a quantidade elementos do array"
+	else
+		reversal(arr, 0, n - 1)
+		reversal(arr, 0, d - 1)
+		reversal(arr, d, n - 1)
+		arr
+	end
+end
+
 def reversal(arr, start, fim)
 	while start < fim
 		arr[start],arr[fim] = arr[fim], arr[start]
@@ -8,13 +21,4 @@ def reversal(arr, start, fim)
 	end
 end
 
-def rothate(arr ,d, n)
-	reversal(arr, 0, n - 1)
-	reversal(arr, 0, d - 1)
-	reversal(arr, d, n - 1)
-end
-array = [1,2,3,4,5,6,7,8,9,10]
-array.length
-k = 3
-rothate(array, k, array.length)
-print array.inspect
+
