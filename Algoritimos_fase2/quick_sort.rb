@@ -1,35 +1,30 @@
 class QuickSort
-	attr_accessor :array
+	def partition(arr, low, high)
+			pivot = arr[high]
+			i = low - 1
 
-	def initialize(array)
-		@array = array
-	end
-
-	def partition(low, high)
-		pivot = @array[high]
-		i = low - 1
-
-		@array.each_with_index do |item, j|
-			if item <= pivot
-				i += 1
-				@array[i], @array[j] = @array[j], @array[i]
+			(low..high - 1).each do |j|
+				if arr[j] <= pivot
+					i += 1
+					arr[i], arr[j] = arr[j], arr[i]
+				end
 			end
-		end
 
-		@array[i + 1], @array[high] = @array[high], @array[i + 1]
-		i + 1
+			arr[i + 1], arr[high] = arr[high], arr[i + 1]
+			i + 1
 	end
 
-	def quicksort(low, high)
+	def quicksort(arr, low, high)
 		if low < high
-			pi = partition(low, high)
-			quicksort(low, pi - 1)
-			quicksort(pi + 1, high)
+			pi = partition(arr, low, high)
+			quicksort(arr, low, pi - 1)
+			quicksort(arr, pi + 1, high)
 		end
 	end
 end
 
-array = [10, 7, 8, 8, 1, 5]
-quicksort = QuickSort.new(array)
-quicksort.quicksort(0, array.length - 1)
-puts array
+array = [-6,3,8,-4,5,20,6,4,-7,2]
+n = array.length
+instance = QuickSort.new
+instance.quicksort(array, 0, n - 1)
+print array
